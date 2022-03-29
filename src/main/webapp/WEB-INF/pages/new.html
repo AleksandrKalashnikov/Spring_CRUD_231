@@ -5,22 +5,24 @@
     <title>New User</title>
 </head>
 <body>
+<div align="center">
 <form th:method="POST" th:action="@{/users}" th:object="${user}">
 
-    <label for="name">Enter name: </label>
+    <label for="name">Name: </label>
     <input type="text" th:field="*{name}" id="name">
     <br/>
 
-    <label for="lastname">Enter lastname: </label>
+    <label for="lastname">Lastname: </label>
     <input type="text" th:field="*{lastname}" id="lastname">
     <br/>
 
-    <label for="age">Enter age: </label>
+    <label for="age">Age: </label>
     <input type="text" th:field="*{age}" id="age">
 
     <br/>
 
     <input type="submit" value="Create"/>
 </form>
+</div>
 </body>
 </html>
